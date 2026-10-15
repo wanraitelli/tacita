@@ -10,6 +10,7 @@
    8. Checkout
    9. Confirmación
    10. Formularios (contacto y newsletter)
+   11. Video del hero
    ========================================================= */
 
 
@@ -431,3 +432,39 @@ document.querySelectorAll("[data-formulario]").forEach(function (form) {
     form.reset();
   });
 });
+
+
+/* ---------- 11. Video del hero ---------- */
+// El video arranca solo, sin sonido y en loop. El botón lo pausa o lo vuelve a reproducir.
+// Si la persona pidió "reducir movimiento" en su sistema, el video arranca pausado.
+const videoHero = document.getElementById("video-hero");
+const botonVideo = document.getElementById("btn-video");
+
+if (videoHero && botonVideo) {
+  function actualizarBotonVideo() {
+    const pausado = videoHero.paused;
+    botonVideo.textContent = pausado ? "Play" : "Pausa";
+    botonVideo.setAttribute("aria-label", pausado ? "Reproducir video" : "Pausar video");
+  }
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    videoHero.pause();
+  }
+
+  botonVideo.addEventListener("click", function () {
+    if (videoHero.paused) {
+      videoHero.play();
+    } else {
+      videoHero.pause();
+    }
+  });
+
+  // Si el archivo de video no carga, queda la foto y escondemos el botón
+  videoHero.querySelector("source").addEventListener("error", function () {
+    botonVideo.hidden = true;
+  });
+
+  videoHero.addEventListener("play", actualizarBotonVideo);
+  videoHero.addEventListener("pause", actualizarBotonVideo);
+  actualizarBotonVideo();
+}
