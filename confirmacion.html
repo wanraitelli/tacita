@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¡listo, gracias! · tacita</title>
+  <meta name="description" content="Tu pedido está confirmado.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <!-- Tipografías de Google Fonts: Fraunces (títulos) y DM Sans (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="contenedor">
+      <nav class="header__barra" aria-label="Menú principal">
+        <a class="logo" href="index.html" aria-label="tacita, ir al inicio">
+          <svg viewBox="0 0 35 25" aria-hidden="true"><path fill="currentColor" d="M8.92857 0.00063744C9.40076 -0.00730842 9.76305 0.0595044 10.2169 0.0913501C13.214 0.301594 16.2608 1.18439 18.9986 2.41431C19.9043 2.82958 20.8001 3.26615 21.6852 3.72366C22.8855 4.3319 24.3625 5.09098 25.4076 5.92588C26.262 6.60844 27.6579 8.14975 28.0282 9.19382C28.2357 9.77879 28.6071 10.8828 28.0522 11.3637C27.5719 11.78 27.59 11.5812 27.3223 12.17C27.6931 12.1524 28.0653 12.0654 28.4417 12.0637C30.9757 12.0519 33.6218 13.6663 34.4906 16.0947C35.0092 17.544 35.2569 19.6429 34.6208 21.0901C32.8702 25.0743 27.3327 24.6718 24.0343 23.2404C23.0553 23.0719 21.7762 22.2515 20.9379 21.694C20.633 21.4912 20.2369 21.0804 19.9065 20.834C19.7683 21.0016 19.6251 21.1651 19.477 21.3242C18.6524 22.2038 17.2663 23.3209 16.2007 23.9078C15.8654 24.0924 15.3084 24.2964 14.9441 24.4469C14.1897 24.7529 13.5173 24.9859 12.6888 24.9988C10.3888 25.0346 8.15581 24.2558 5.94913 23.6983C5.64614 23.5861 5.3362 23.4508 5.03801 23.3319C3.9349 22.8919 2.8333 22.2747 2.05559 21.3599C1.4545 20.6528 1.31479 19.6431 1.14722 18.7619C1.07762 18.396 0.970998 18.036 0.907618 17.6687C0.845476 17.2288 0.809534 16.7792 0.755585 16.3395L0.414806 13.7301C0.280936 12.6991 0.0507998 11.3903 0.0196513 10.3708C-0.0499886 8.09062 0.0466647 5.69713 0.616653 3.48033C0.964079 2.12901 3.05834 0.890895 4.32874 0.471914C5.62609 0.0440453 7.56259 0.0236715 8.92857 0.00063744ZM3.24627 3.23828C3.67184 3.74619 4.32341 4.29955 4.91717 4.61032C5.47788 4.90381 6.2113 5.00595 6.79767 5.24735C8.46598 5.93404 10.2184 6.4011 11.9363 6.94425C12.9315 7.28884 13.9111 7.67809 14.9359 7.93189C15.1385 7.98206 15.3519 8.02809 15.5489 8.09178C17.1979 8.62489 18.9066 8.96336 20.6069 9.28611C20.9521 9.35162 21.2342 9.3864 21.5859 9.41736L21.9807 9.45025C23.2498 9.61852 24.0309 9.53454 25.2678 9.52615C23.4249 7.16242 19.9653 5.81809 17.3119 4.52888C17.0495 4.40138 16.5485 4.20702 16.25 4.10769C13.2413 2.63662 10.1754 2.51804 6.79416 2.75078C5.37871 2.84659 4.60734 2.77389 3.24627 3.23828ZM22.804 17.8455C23.3914 18.1534 23.9098 18.5729 24.475 18.8898C25.6895 19.5709 26.8477 20.003 28.2041 20.2931C28.5723 20.4163 29.1188 20.3727 29.5022 20.3678C30.9251 20.3497 31.4754 18.758 30.8242 17.6558C29.9203 16.1259 27.8119 14.6359 25.9923 14.8003C25.9015 14.8151 25.685 14.8434 25.617 14.9043C25.0697 15.3939 24.6373 15.989 24.1486 16.5276C23.733 16.9856 23.2259 17.3767 22.804 17.8455Z"/></svg>
+          <span>tacita</span>
+        </a>
+        <ul class="header__menu" id="menu">
+          <li><a href="el-cafe.html">el café</a></li>
+          <li><a href="estante.html">estante</a></li>
+          <li><a href="carta.html">carta</a></li>
+          <li><a href="eventos.html">eventos</a></li>
+          <li><a href="contacto.html">contacto</a></li>
+        </ul>
+        <div class="header__acciones">
+          <a class="btn-carrito" href="carrito.html">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h9.7a1 1 0 0 0 1-.8L21 7H6"/></svg>
+            <span class="solo-lector">Productos en el carrito:</span>
+            <span class="carrito-contador" aria-live="polite">0</span>
+          </a>
+          <button class="btn-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="contenedor">
+      <div class="confirmacion">
+        <div class="sticker-redondo sticker-redondo--rojo">¡gracias!</div>
+        <h1 class="display">¡listo, gracias!</h1>
+        <p>Tu pedido <strong id="numero-pedido">#0142</strong> está confirmado. Te mandamos los detalles por mail.</p>
+        <div class="que-sigue">
+          <span class="etiqueta">qué sigue</span>
+          <p>Si elegiste retiro, lo tenés listo en el local en 24 horas.</p>
+          <p>Si elegiste envío, te avisamos por mail cuando sale.</p>
+        </div>
+        <div class="grupo-botones">
+          <a class="btn btn--principal" href="index.html">Volver al inicio</a>
+          <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Seguinos en Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Instagram ===== -->
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="fila-titulo">
+          <div>
+            <h2 class="titulo-2">mientras tanto en Instagram</h2>
+            <p class="suave">Catas, invitados y lo que sale del horno.</p>
+          </div>
+          <a class="btn btn--chico" href="https://www.instagram.com/" target="_blank" rel="noopener">Seguinos · @tacita.cafe</a>
+        </div>
+        <div class="instagram">
+          <div class="foto"><img src="img/perrito.jpg" alt="Un perro en la vereda de tacita mientras su dueño sostiene un café" loading="lazy"></div>
+          <div class="foto"><img src="img/estante.jpg" alt="El estante con libros ilustrados y tazas" loading="lazy"></div>
+          <div class="foto"><img src="img/croissants.jpg" alt="Una bandeja de croissants recién horneados" loading="lazy"></div>
+          <div class="foto"><img src="img/salon-puerta.jpg" alt="Una clienta leyendo en el salón" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer__grilla">
+        <div class="footer__marca">
+          <a class="logo" href="index.html"><svg viewBox="0 0 35 25" aria-hidden="true"><path fill="currentColor" d="M8.92857 0.00063744C9.40076 -0.00730842 9.76305 0.0595044 10.2169 0.0913501C13.214 0.301594 16.2608 1.18439 18.9986 2.41431C19.9043 2.82958 20.8001 3.26615 21.6852 3.72366C22.8855 4.3319 24.3625 5.09098 25.4076 5.92588C26.262 6.60844 27.6579 8.14975 28.0282 9.19382C28.2357 9.77879 28.6071 10.8828 28.0522 11.3637C27.5719 11.78 27.59 11.5812 27.3223 12.17C27.6931 12.1524 28.0653 12.0654 28.4417 12.0637C30.9757 12.0519 33.6218 13.6663 34.4906 16.0947C35.0092 17.544 35.2569 19.6429 34.6208 21.0901C32.8702 25.0743 27.3327 24.6718 24.0343 23.2404C23.0553 23.0719 21.7762 22.2515 20.9379 21.694C20.633 21.4912 20.2369 21.0804 19.9065 20.834C19.7683 21.0016 19.6251 21.1651 19.477 21.3242C18.6524 22.2038 17.2663 23.3209 16.2007 23.9078C15.8654 24.0924 15.3084 24.2964 14.9441 24.4469C14.1897 24.7529 13.5173 24.9859 12.6888 24.9988C10.3888 25.0346 8.15581 24.2558 5.94913 23.6983C5.64614 23.5861 5.3362 23.4508 5.03801 23.3319C3.9349 22.8919 2.8333 22.2747 2.05559 21.3599C1.4545 20.6528 1.31479 19.6431 1.14722 18.7619C1.07762 18.396 0.970998 18.036 0.907618 17.6687C0.845476 17.2288 0.809534 16.7792 0.755585 16.3395L0.414806 13.7301C0.280936 12.6991 0.0507998 11.3903 0.0196513 10.3708C-0.0499886 8.09062 0.0466647 5.69713 0.616653 3.48033C0.964079 2.12901 3.05834 0.890895 4.32874 0.471914C5.62609 0.0440453 7.56259 0.0236715 8.92857 0.00063744ZM3.24627 3.23828C3.67184 3.74619 4.32341 4.29955 4.91717 4.61032C5.47788 4.90381 6.2113 5.00595 6.79767 5.24735C8.46598 5.93404 10.2184 6.4011 11.9363 6.94425C12.9315 7.28884 13.9111 7.67809 14.9359 7.93189C15.1385 7.98206 15.3519 8.02809 15.5489 8.09178C17.1979 8.62489 18.9066 8.96336 20.6069 9.28611C20.9521 9.35162 21.2342 9.3864 21.5859 9.41736L21.9807 9.45025C23.2498 9.61852 24.0309 9.53454 25.2678 9.52615C23.4249 7.16242 19.9653 5.81809 17.3119 4.52888C17.0495 4.40138 16.5485 4.20702 16.25 4.10769C13.2413 2.63662 10.1754 2.51804 6.79416 2.75078C5.37871 2.84659 4.60734 2.77389 3.24627 3.23828ZM22.804 17.8455C23.3914 18.1534 23.9098 18.5729 24.475 18.8898C25.6895 19.5709 26.8477 20.003 28.2041 20.2931C28.5723 20.4163 29.1188 20.3727 29.5022 20.3678C30.9251 20.3497 31.4754 18.758 30.8242 17.6558C29.9203 16.1259 27.8119 14.6359 25.9923 14.8003C25.9015 14.8151 25.685 14.8434 25.617 14.9043C25.0697 15.3939 24.6373 15.989 24.1486 16.5276C23.733 16.9856 23.2259 17.3767 22.804 17.8455Z"/></svg><span>tacita</span></a>
+          <p>café de especialidad en Chacarita</p>
+        </div>
+        <div>
+          <span class="etiqueta">visitanos</span>
+          <ul>
+            <li>Guevara 202, Chacarita, CABA</li>
+            <li>Lunes a viernes de 8 a 20</li>
+            <li>Sábados y domingos de 10 a 20</li>
+          </ul>
+        </div>
+        <div>
+          <span class="etiqueta">seguinos</span>
+          <ul>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://wa.me/?text=Hola%20tacita!" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:hola@tacita.cafe">hola@tacita.cafe</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="etiqueta">navegá</span>
+          <ul>
+            <li><a href="el-cafe.html">el café</a></li>
+            <li><a href="estante.html">estante</a></li>
+            <li><a href="carta.html">carta</a></li>
+            <li><a href="eventos.html">eventos</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__nota">tacita · Proyecto Integrador Contenidos y Creatividad I · Universidad de Palermo · 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
