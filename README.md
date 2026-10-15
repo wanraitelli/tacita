@@ -2,7 +2,7 @@
 
 Sitio de **tacita**, un café de especialidad ficticio en Chacarita (CABA), con estante (café en grano, libros y merch), carta y reserva del espacio para eventos.
 
-Proyecto integrador de Producción Digital I y Contenidos y Creatividad I · Universidad de Palermo · 2026 · Wanda Raitelli.
+Proyecto integrador de Contenidos y Creatividad I · Universidad de Palermo · 2026 · Wanda Raitelli.
 
 ## Páginas
 
