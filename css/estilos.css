@@ -717,6 +717,30 @@ h1, h2, h3, .serif {
   height: 520px;
 }
 
+/* Video del hero: se recorta igual que una foto */
+.foto video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Botón para pausar el video (sticker en la esquina) */
+.btn-video {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  padding: 8px 14px;
+  border: var(--borde);
+  border-radius: var(--radio-boton);
+  background: var(--lino);
+  color: var(--tinta);
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
 /* Home y El café: foto + texto sobre amarillo */
 .bloque-foto .foto {
   height: 440px;

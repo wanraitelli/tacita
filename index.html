@@ -58,8 +58,12 @@
             <a class="btn" href="estante.html">Ver el estante</a>
           </div>
         </div>
-        <div class="foto">
-          <img src="img/barista-mostrador.jpg" alt="Una barista sirve un café de filtro sobre el mostrador rojo">
+        <!-- Video en loop y sin sonido. Mientras carga (o si no hay video) se ve la foto del poster. -->
+        <div class="foto foto--video">
+          <video id="video-hero" autoplay muted loop playsinline poster="img/salon.jpg" aria-label="Un rato en tacita: gente charlando en el salón, una clienta leyendo y un perro en la vereda">
+            <source src="video/hero.mp4" type="video/mp4">
+          </video>
+          <button class="btn-video" type="button" id="btn-video" aria-label="Pausar video">Pausa</button>
         </div>
       </div>
     </section>
